@@ -1,0 +1,61 @@
+:root {
+    --color1: rgba(255, 255, 0, 0.918);
+    --color11:orange;
+    --color111: red;
+
+}
+ main{
+    width: 300px;
+    height: 500px;
+    background-color: var(--color1);
+
+    margin: auto;
+    margin-top: 90px;
+    padding: 30px;
+
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 400;
+ }
+
+ .pantalla{
+    font-size: 80px;
+    font-weight: 600;
+    text-align: right;
+ }
+
+ .teclado{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows:repeat(5,82.5) ;
+gap: 10px;
+
+}
+
+.teclitas{
+    font-size:35px ;
+    font-weight: 400;
+    background-color:var(--color11);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.teclita{
+    font-size: 35px;
+    font-weight: 400;
+    color:var(--color11);
+    background-color:var(--color111);
+    
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    grid-column: 1;
+    grid-column-end: 3;
+}
